@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function loadPage(page) {
+        alert("Hello, World!")
         content.innerHTML = pages[page];
     }
 
