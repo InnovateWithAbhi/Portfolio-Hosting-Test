@@ -342,7 +342,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.5rem;
   justify-content: space-around;
 }
 
@@ -353,8 +353,7 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 article .icon {
@@ -365,6 +364,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 5vh;
 }
 
 .color-container {
