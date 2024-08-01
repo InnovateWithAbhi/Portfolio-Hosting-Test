@@ -366,9 +366,31 @@ section {
   gap: 2rem;
 }
 
-.experience-details {
+.experience-dialog {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  flex: 1 1 200px; /* Flexible and responsive width */
+  text-align: left;
+  max-width: 300px;
+  z-index: 1000;
+}
+
+.experience-details:hover .experience-dialog,
+.experience-details.active .experience-dialog {
+  display: block;
+}
+
+.experience-details {
+  position: relative;
+  padding: 1.5rem;
+  flex: 1 1 200px;
   max-width: 300px;
   background: white;
   border-radius: 2rem;
