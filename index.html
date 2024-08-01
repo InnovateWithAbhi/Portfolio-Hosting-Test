@@ -139,7 +139,11 @@
       <h1 class="title">Experience</h1>
       <div class="experience-section-container">
         <div class="experience-containers">
-          <div class="experience-details">
+          <div
+            class="experience-details"
+            data-id="1"
+            onclick="toggleDialog(this)"
+          >
             <i
               class="fa-solid fa-briefcase fa-2xl icon-unclick"
               alt="Experience icon"
@@ -150,6 +154,10 @@
               to Present
             </p>
             <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
               <ul>
                 <li>Developed various .NET applications</li>
                 <li>Implemented RESTful APIs</li>
@@ -157,7 +165,11 @@
               </ul>
             </div>
           </div>
-          <div class="experience-details">
+          <div
+            class="experience-details"
+            data-id="2"
+            onclick="toggleDialog(this)"
+          >
             <i
               class="fa-solid fa-briefcase fa-2xl icon-unclick"
               alt="Experience icon"
@@ -166,8 +178,18 @@
             <p>
               <strong>Persistent Systems</strong><br />July 2022 to August 2023
             </p>
+            <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
+            </div>
           </div>
-          <div class="experience-details">
+          <div
+            class="experience-details"
+            data-id="3"
+            onclick="toggleDialog(this)"
+          >
             <i
               class="fa-solid fa-briefcase fa-2xl icon-unclick"
               alt="Experience icon"
@@ -177,6 +199,12 @@
               <strong>Persistent Systems</strong><br />February 2022 to July
               2022
             </p>
+            <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -570,5 +598,6 @@
       <p>Copyright &#169; 2024 Abhishek Patil. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <div class="modal-overlay"></div>
   </body>
 </html>
