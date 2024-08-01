@@ -23,6 +23,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -39,6 +40,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -123,6 +125,86 @@
               project success and enhance application performance. Committed to
               continuous learning and staying updated with industry trends.
             </p>
+          </div>
+        </div>
+      </div>
+      <i
+        class="fa-solid fa-angles-down icon arrow fa-2xl"
+        alt="Arrow icon"
+        onclick="location.href='./#experience'"
+      ></i>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-section-container">
+        <div class="experience-containers">
+          <div
+            class="experience-details"
+            data-id="1"
+            onclick="toggleDialog(this)"
+          >
+            <i
+              class="fa-solid fa-briefcase fa-2xl icon-unclick"
+              alt="Experience icon"
+            ></i>
+            <h3>Software Developer (.Net)</h3>
+            <p>
+              <strong>Jisa Softech Private Limited</strong><br />September 2023
+              to Present
+            </p>
+            <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
+              <ul>
+                <li>Developed various .NET applications</li>
+                <li>Implemented RESTful APIs</li>
+                <li>Collaborated with cross-functional teams</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="experience-details"
+            data-id="2"
+            onclick="toggleDialog(this)"
+          >
+            <i
+              class="fa-solid fa-briefcase fa-2xl icon-unclick"
+              alt="Experience icon"
+            ></i>
+            <h3>Software Engineer</h3>
+            <p>
+              <strong>Persistent Systems</strong><br />July 2022 to August 2023
+            </p>
+            <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
+            </div>
+          </div>
+          <div
+            class="experience-details"
+            data-id="3"
+            onclick="toggleDialog(this)"
+          >
+            <i
+              class="fa-solid fa-briefcase fa-2xl icon-unclick"
+              alt="Experience icon"
+            ></i>
+            <h3>Intern</h3>
+            <p>
+              <strong>Persistent Systems</strong><br />February 2022 to July
+              2022
+            </p>
+            <div class="experience-dialog">
+              <i
+                class="fa-solid fa-times close-icon"
+                onclick="closeDialog(event)"
+              ></i>
+            </div>
           </div>
         </div>
       </div>
@@ -506,6 +588,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -515,5 +598,6 @@
       <p>Copyright &#169; 2024 Abhishek Patil. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <div class="modal-overlay"></div>
   </body>
 </html>
