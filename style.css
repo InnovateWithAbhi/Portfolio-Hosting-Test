@@ -553,6 +553,25 @@ article .icon {
   cursor: default;
 }
 
+/* CERTIFICATIONS SECTION */
+
+#certifications {
+  position: relative;
+  margin-top: 5vh;
+}
+
+.certifications-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.certifications-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
 /* FOOTER SECTION */
 
 footer {
